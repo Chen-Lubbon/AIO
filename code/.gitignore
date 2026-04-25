@@ -1,0 +1,26 @@
+# Python缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 数据文件
+*.csv
+*.json
+*.pkl
+*.pth
+*.pt
+*.zip
+
+# 数据和日志目录
+data/
+data_compare/
+depths/
+BaryIR/
+TPGDiff/
+Train_results/
+logs/
+
+# 其他
+*.log
+*.tmp
+EOF
