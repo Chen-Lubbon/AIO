@@ -11,16 +11,35 @@ __pycache__/
 *.pt
 *.zip
 
-# 数据和日志目录
-data/
-data_compare/
-depths/
-BaryIR/
-TPGDiff/
-Train_results/
-logs/
-
-# 其他
+# 日志和临时文件
 *.log
 *.tmp
-EOF
+
+# 数据和日志目录（只忽略非代码文件，保留py和ipynb）
+data/*
+!data/**/*.py
+!data/**/*.ipynb
+
+data_compare/*
+!data_compare/**/*.py
+!data_compare/**/*.ipynb
+
+depths/*
+!depths/**/*.py
+!depths/**/*.ipynb
+
+BaryIR/*
+!BaryIR/**/*.py
+!BaryIR/**/*.ipynb
+
+TPGDiff/*
+!TPGDiff/**/*.py
+!TPGDiff/**/*.ipynb
+
+Train_results/*
+!Train_results/**/*.py
+!Train_results/**/*.ipynb
+
+logs/*
+!logs/**/*.py
+!logs/**/*.ipynb
